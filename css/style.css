@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Waterfall&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap');
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to right top, #3f36f8, #4f38f2, #5b39ec, #653ce6, #6d3ee0, #6d3ce0, #6c3adf, #6c38df, #6230e5, #5728ea, #481ff0, #3214f6);
+}
+
+.fullscreen-loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+}
+
+.waterfall-regular {
+    font-family: "Waterfall", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 120px;
+}
+
+main {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;/
+}
+
+
+.book {
+    position: relative;
+    border-radius: 30px;
+    width: 75vw;
+    height: 80vh;
+    background-color: whitesmoke;
+    -webkit-box-shadow: 1px 1px 12px #000;
+    box-shadow: 1px 1px 12px #000;
+    -webkit-transform: preserve-3d;
+    -ms-transform: preserve-3d;
+    transform: preserve-3d;
+    -webkit-perspective: 2000px;
+    perspective: 2000px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #000;
+    background-image: url('book.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.cover {
+    top: 0;
+    position: absolute;
+    background-color: lightgray;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    cursor: pointer;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-transform-origin: 0;
+    -ms-transform-origin: 0;
+    transform-origin: 0;
+    -webkit-box-shadow: 1px 1px 12px #000;
+    box-shadow: 1px 1px 12px #000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: last baseline;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-image: url('cover.jpg');
+    background-size: cover;
+    /* This line makes the image cover the entire area */
+    background-repeat: no-repeat;
+    /* Prevents the image from repeating */
+    background-position: center;
+}
+
+.book:hover .cover {
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-transform: rotatey(-85deg);
+    -ms-transform: rotatey(-85deg);
+    transform: rotatey(-85deg);
+}
+
+.text {
+    font-size: 80px;
+    text-align: center;
+}
+
+.cover-text {
+    font-size: 250px;
+    text-align: center;
+    color: rgb(2, 46, 179);
+    font-family: "Lavishly Yours";
+    font-weight: 400;
+    font-style: normal;
+
+}
